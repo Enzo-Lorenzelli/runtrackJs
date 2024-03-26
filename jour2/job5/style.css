@@ -1,0 +1,15 @@
+/* style.css */
+
+/* Définition de la taille minimale du body */
+body,
+html {
+  min-width: 4096px; /* Largeur minimale de 4096px */
+}
+
+/* Style du footer */
+footer {
+  position: fixed; /* Fixe le footer à la fenêtre du navigateur */
+  bottom: 0; /* Positionne le footer en bas */
+  width: 100vw; /* Largeur de 100% de la largeur de la fenêtre */
+  text-align: center; /* Alignement du texte au centre */
+}
