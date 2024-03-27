@@ -1,0 +1,3 @@
+$("#showhide").click(function () {
+  $("#message");
+});
