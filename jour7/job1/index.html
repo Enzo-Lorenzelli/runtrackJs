@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html">Inscription</a></li>
+          <li><a href="index.html">Connexion</a></li>
+          <li><a href="index.html">Rechercher</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Formulaire de création de compte</h2>
+      <form action="#" method="POST">
+        <div>
+          <label for="civilite">Civilité :</label><br />
+          <input type="radio" id="monsieur" name="civilite" value="monsieur" />
+          <label for="monsieur">Monsieur</label>
+          <input type="radio" id="madame" name="civilite" value="madame" />
+          <label for="madame">Madame</label>
+        </div>
+        <div>
+          <label for="prenom">Prénom :</label><br />
+          <input type="text" id="prenom" name="prenom" />
+        </div>
+        <div>
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="nom" />
+        </div>
+        <div>
+          <label for="adresse">Adresse mail:</label><br />
+          <input type="text" id="adresse" name="adresse" />
+        </div>
+        <div>
+          <label for="email">Adresse email confirmation :</label><br />
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="motdepasse">Mot de passe :</label><br />
+          <input type="password" id="motdepasse" name="motdepasse" />
+        </div>
+        <div>
+          <label for="confirmation">Confirmer le mot de passe :</label><br />
+          <input type="password" id="confirmation" name="confirmation" />
+        </div>
+        <div>
+          <label>Passions :</label><br />
+          <input
+            type="checkbox"
+            id="informatique"
+            name="passions"
+            value="informatique"
+          />
+          <label for="informatique">Informatique</label>
+          <input type="checkbox" id="voyages" name="passions" value="voyages" />
+          <label for="voyages">Voyages</label>
+          <input type="checkbox" id="sport" name="passions" value="sport" />
+          <label for="sport">Sport</label>
+          <input type="checkbox" id="lecture" name="passions" value="lecture" />
+          <label for="lecture">Lecture</label>
+        </div>
+        <button type="submit">Valider</button>
+      </form>
+    </section>
+
+    <footer>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Inscription</a></li>
+        <li><a href="index.html">Connexion</a></li>
+        <li><a href="index.html">Rechercher</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

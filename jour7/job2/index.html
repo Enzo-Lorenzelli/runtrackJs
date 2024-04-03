@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+    <!-- Ajout du CDN de Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <style>
+      /* Ajout de styles CSS personnalisés */
+      body {
+        padding-top: 50px; /* Ajoute de l'espace en haut pour le header fixe */
+      }
+      /* Ajout de couleur et de marge aux formulaires */
+      form {
+        background-color: #f2f2f2; /* Couleur de fond gris clair */
+        border-radius: 10px; /* Coins arrondis */
+        padding: 20px; /* Espacement interne */
+        margin: 0 auto; /* Centrage horizontal */
+        max-width: 500px; /* Largeur maximale */
+      }
+      /* Ajout de couleur aux entrées du formulaire */
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="radio"],
+      input[type="checkbox"] {
+        border: 1px solid #ccc; /* Bordure grise */
+        padding: 8px; /* Espacement interne */
+        border-radius: 5px; /* Coins arrondis */
+        width: 100%; /* Largeur pleine */
+        box-sizing: border-box; /* La largeur inclut le padding et la bordure */
+        margin-bottom: 10px; /* Espacement entre les entrées */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="blue lighten-3">
+      <!-- Ajout de classes Materialize pour la couleur bleu clair -->
+      <nav class="container">
+        <!-- Ajout de la classe container pour aligner le contenu -->
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Inscription</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="index.html">Rechercher</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h2 class="center-align">Formulaire de création de compte</h2>
+      <form action="#" method="POST">
+        <div class="row">
+          <div class="col">
+            <label>
+              <input
+                type="checkbox"
+                id="monsieurCheckbox"
+                name="civiliteCheckbox"
+                value="monsieur"
+              />
+              <span>Monsieur</span>
+            </label>
+          </div>
+          <div class="col">
+            <label>
+              <input
+                type="checkbox"
+                id="madameCheckbox"
+                name="civiliteCheckbox"
+                value="madame"
+              />
+              <span>Madame</span>
+            </label>
+          </div>
+          <div class="col">
+            <label>
+              <input
+                type="checkbox"
+                id="autreCheckbox"
+                name="civiliteCheckbox"
+                value="autre"
+              />
+              <span>Autre</span>
+            </label>
+          </div>
+          <!-- Ajoute une autre case à cocher ici si nécessaire -->
+        </div>
+
+        <div>
+          <label for="prenom">Prénom :</label><br />
+          <input type="text" id="prenom" name="prenom" />
+        </div>
+        <div>
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="nom" />
+        </div>
+        <div>
+          <label for="adresse">Adresse :</label><br />
+          <input type="text" id="adresse" name="adresse" />
+        </div>
+        <div>
+          <label for="email">Adresse email :</label><br />
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="motdepasse">Mot de passe :</label><br />
+          <input type="password" id="motdepasse" name="motdepasse" />
+        </div>
+        <div>
+          <label for="confirmation">Confirmer le mot de passe :</label><br />
+          <input type="password" id="confirmation" name="confirmation" />
+        </div>
+        <div>
+          <label>Passions :</label><br />
+          <div class="row">
+            <div class="col s3">
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    id="informatique"
+                    name="passions"
+                    value="informatique"
+                  />
+                  <span>Informatique</span>
+                </label>
+              </p>
+            </div>
+            <div class="col s3">
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    id="voyages"
+                    name="passions"
+                    value="voyages"
+                  />
+                  <span>Voyages</span>
+                </label>
+              </p>
+            </div>
+            <div class="col s3">
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    id="sport"
+                    name="passions"
+                    value="sport"
+                  />
+                  <span>Sport</span>
+                </label>
+              </p>
+            </div>
+            <div class="col s3">
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    id="lecture"
+                    name="passions"
+                    value="lecture"
+                  />
+                  <span>Lecture</span>
+                </label>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn">Valider</button>
+      </form>
+    </section>
+
+    <footer class="row">
+      <div class="input-field col s12">
+        <ul class="tabs">
+          <li class="tab col"><a href="index.html">Accueil</a></li>
+          <li class="tab col"><a href="index.html">Inscription</a></li>
+          <li class="tab col"><a href="index.html">Connexion</a></li>
+          <li class="tab col"><a href="index.html">Rechercher</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Ajout du script de Materialize CSS pour les fonctionnalités JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
