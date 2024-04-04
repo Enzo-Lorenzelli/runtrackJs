@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  </head>
+  <body>
+    <!-- Header avec navigation -->
+    <header class="bg-gray-800 text-white p-4">
+      <nav>
+        <ul class="flex gap-6 items-center justify-center">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#inscription">Inscription</a></li>
+          <li><a href="#connexion">Connexion</a></li>
+          <li><a href="#recherche">Rechercher</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section avec formulaire de création de compte -->
+    <section class="bg-gradient-to-tr from-pink-300 to-blue-50 space-x-4 space-y-4">
+      <h1 class="border-2 border-purple-300 text-center bg-purple-500">Création de compte :</h1>
+      <form action="#" method="post" class="flex flex-col items-center space-x-4 space-y-4">
+       <div class="border-2 border-purple-300 bg-yellow-200 p-2 flex flex-row items-center">
+  <label for="civilite" class="mr-2">Civilité :</label>
+  <input type="radio" id="monsieur" name="civilite" value="monsieur" />
+  <label for="monsieur" class="mr-2">Monsieur</label>
+  <input type="radio" id="madame" name="civilite" value="madame" />
+  <label for="madame" class="mr-2">Madame</label>
+  <input type="radio" id="autre" name="civilite" value="autre" />
+  <label for="autre">Autre</label>
+</div>
+
+<div class="border-2 border-purple-300 bg-yellow-200 p-2">
+  <label for="prenom" class="mr-2">Prénom :</label>
+  <input type="text" id="prenom" name="prenom" class="px-2 py-1 rounded" />
+</div>
+
+<div class="border-2 border-purple-300 bg-yellow-200 p-2">
+  <label for="nom" class="mr-2">Nom :</label>
+  <input type="text" id="nom" name="nom" class="px-2 py-1 rounded" />
+</div>
+
+<div class="border-2 border-purple-300 bg-yellow-200 p-2">
+  <label for="adresse" class="mr-2">Adresse :</label>
+  <input type="text" id="adresse" name="adresse" class="px-2 py-1 rounded" />
+</div>
+
+<div class="border-2 border-purple-300 bg-yellow-200 p-2">
+  <label for="email" class="mr-2">Adresse email :</label>
+  <input type="email" id="email" name="email" class="px-2 py-1 rounded" />
+</div>
+
+<div class="border-2 border-purple-300 bg-yellow-200 p-2">
+  <label for="motdepasse" class="mr-2">Mot de passe :</label>
+  <input type="password" id="motdepasse" name="motdepasse" class="px-2 py-1 rounded" />
+</div>
+
+<div class="border-2 border-purple-300 bg-yellow-200 p-2">
+  <label for="confirmation" class="mr-2">Confirmer le mot de passe :</label>
+  <input type="password" id="confirmation" name="confirmation" class="px-2 py-1 rounded" />
+</div>
+
+<div class="border-2 border-purple-300 bg-yellow-200 p-2 flex flex-row gap-2">
+  <label class="mr-2">Passions :</label>
+  <input type="checkbox" id="informatique" name="informatique" value="informatique" class="mr-0" />
+  <label for="informatique" class="mr-2">Informatique</label>
+  <input type="checkbox" id="voyages" name="voyages" value="voyages" class="mr-0" />
+  <label for="voyages" class="mr-2">Voyages</label>
+  <input type="checkbox" id="sport" name="sport" value="sport" class="mr-4" />
+  <label for="sport" class="mr-2">Sport</label>
+  <input type="checkbox" id="lecture" name="lecture" value="lecture" class="mr-4" />
+  <label for="lecture">Lecture</label>
+</div>
+
+<button type="submit" class="border-2 border-blue-300 bg-blue-50 p-2 rounded">Valider</button>
+
+      </form>
+    </section>
+
+    <!-- Footer avec liste de liens -->
+    <footer class="bg-gray-800 text-white p-4">
+      <ul class="flex gap-6 items-center justify-center">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#inscription">Inscription</a></li>
+        <li><a href="#connexion">Connexion</a></li>
+        <li><a href="#recherche">Rechercher</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

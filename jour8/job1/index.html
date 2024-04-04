@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header avec navigation -->
+    <header class="bg-gray-800 text-white p-4">
+      <nav>
+        <ul class="flex flex-wrap gap-6 items-center justify-center">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#inscription">Inscription</a></li>
+          <li><a href="#connexion">Connexion</a></li>
+          <li><a href="#recherche">Rechercher</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section avec formulaire de création de compte -->
+    <section>
+      <h1>Création de compte</h1>
+      <form action="#" method="post">
+        <div>
+          <label for="civilite">Civilité :</label><br />
+          <input type="radio" id="monsieur" name="civilite" value="monsieur" />
+          <label for="monsieur">Monsieur</label><br />
+          <input type="radio" id="madame" name="civilite" value="madame" />
+          <label for="madame">Madame</label><br />
+          <input type="radio" id="autre" name="civilite" value="autre" />
+          <label for="autre">Autre</label><br />
+        </div>
+        <div>
+          <label for="prenom">Prénom :</label><br />
+          <input type="text" id="prenom" name="prenom" /><br />
+        </div>
+        <div>
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="nom" /><br />
+        </div>
+        <div>
+          <label for="adresse">Adresse :</label><br />
+          <input type="text" id="adresse" name="adresse" /><br />
+        </div>
+        <div>
+          <label for="email">Adresse email :</label><br />
+          <input type="email" id="email" name="email" /><br />
+        </div>
+        <div>
+          <label for="motdepasse">Mot de passe :</label><br />
+          <input type="password" id="motdepasse" name="motdepasse" /><br />
+        </div>
+        <div>
+          <label for="confirmation">Confirmer le mot de passe :</label><br />
+          <input type="password" id="confirmation" name="confirmation" /><br />
+        </div>
+        <div>
+          <label>Passions :</label><br />
+          <input
+            type="checkbox"
+            id="informatique"
+            name="informatique"
+            value="informatique"
+          />
+          <label for="informatique">Informatique</label><br />
+          <input type="checkbox" id="voyages" name="voyages" value="voyages" />
+          <label for="voyages">Voyages</label><br />
+          <input type="checkbox" id="sport" name="sport" value="sport" />
+          <label for="sport">Sport</label><br />
+          <input type="checkbox" id="lecture" name="lecture" value="lecture" />
+          <label for="lecture">Lecture</label><br />
+        </div>
+        <button type="submit">Valider</button>
+      </form>
+    </section>
+
+    <!-- Footer avec liste de liens -->
+    <footer class="bg-gray-800 text-white p-4">
+      <ul class="flex">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Inscription</a></li>
+        <li><a href="index.html">Connexion</a></li>
+        <li><a href="index.html">Rechercher</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
