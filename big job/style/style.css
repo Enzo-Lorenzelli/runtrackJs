@@ -1,0 +1,83 @@
+/* Styles spécifiques pour la page de modération */
+.accept-icon,
+.refuse-icon {
+  font-size: 2rem;
+}
+
+.accept-icon {
+  color: green;
+}
+
+.refuse-icon {
+  color: red;
+}
+
+/* styles.css */
+
+/* Body */
+body {
+  background-color: #f1f1f1; /* Couleur de fond */
+  color: #333; /* Couleur du texte */
+  font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+/* Titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #555; /* Couleur des titres */
+}
+
+/* Liens */
+a {
+  color: #007bff; /* Couleur des liens */
+  text-decoration: none; /* Pas de soulignement */
+}
+
+a:hover {
+  color: #0056b3; /* Couleur des liens au survol */
+}
+
+/* Boutons */
+.btn {
+  background-color: #007bff; /* Couleur de fond des boutons */
+  color: #fff; /* Couleur du texte des boutons */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Couleur de fond des boutons au survol */
+}
+
+/* Formulaire */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border: 1px solid #ccc; /* Bordure des champs de formulaire */
+  border-radius: 4px; /* Coins arrondis des champs de formulaire */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #007bff; /* Bordure des champs de formulaire au focus */
+}
+
+/* Conteneur */
+.container {
+  margin-top: 20px; /* Marge supérieure */
+  padding: 20px; /* Espacement intérieur */
+  background-color: #fff; /* Couleur de fond */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.btn-disabled {
+  background-color: #cccccc; /* Couleur de fond grise */
+  color: #ffffff; /* Texte blanc */
+  cursor: not-allowed; /* Curseur non autorisé */
+}

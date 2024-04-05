@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Plateforme_ - Gestion de présence</title>
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Gestion des demandes - Modérateur</h3>
+      <p>Vous pouvez accepter ou refuser les demandes des élèves ici :</p>
+
+      <!-- Liste des demandes -->
+      <ul class="collection">
+        <li class="collection-item avatar" style="width: 100%">
+          <img src="images/student1.jpg" alt="" class="circle" />
+          <span class="title">John Doe</span>
+          <p class="date" data-date="2024-04-02">
+            Demande envoyée le 02/04/2024
+          </p>
+          <div class="secondary-content" style="width: auto">
+            <a href="#!" class="accept" id="accept1">
+              <i class="material-icons accept-icon">check</i>
+            </a>
+            <a href="#!" class="refuse" id="refuse1">
+              <i class="material-icons refuse-icon">cancel</i>
+            </a>
+          </div>
+        </li>
+        <!-- Ajouter d'autres éléments de liste pour d'autres demandes -->
+      </ul>
+    </div>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

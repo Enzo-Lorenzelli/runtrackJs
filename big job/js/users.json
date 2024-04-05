@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "eleve@laplateforme.io",
+      "password": "password1",
+      "role": "eleve"
+    },
+    {
+      "email": "moderateur@laplateforme.io",
+      "password": "password2",
+      "role": "moderateur"
+    },
+    {
+      "email": "admin@laplateforme.io",
+      "password": "password3",
+      "role": "admin"
+    }
+  ]
+}

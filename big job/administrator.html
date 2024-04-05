@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de modération</title>
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Gestion des demandes - Modérateur</h3>
+      <p>Vous pouvez accepter ou refuser les demandes des élèves ici :</p>
+
+<!-- Liste des demandes -->
+<ul class="collection">
+  <li class="collection-item avatar" style="width: 100%">
+    <img src="images/student1.jpg" alt="" class="circle" />
+    <span class="title">John Doe</span>
+    <p>Demande envoyée le 02/04/2024</p>
+    <div class="secondary-content" style="width: auto">
+      <a href="#!" id="accept1"><i class="material-icons accept-icon">check</i></a>
+      <a href="#!" id="refuse1"><i class="material-icons refuse-icon">cancel</i></a>
+    </div>
+  </li>
+  <li class="collection-item avatar" style="width: 100%">
+    <img src="images/student2.jpg" alt="" class="circle" />
+    <span class="title">Jane Smith</span>
+    <p>Demande envoyée le 16/04/2024</p>
+    <div class="secondary-content" style="width: auto">
+      <a href="#!" id="accept2"><i class="material-icons accept-icon">check</i></a>
+      <a href="#!" id="refuse2"><i class="material-icons refuse-icon">cancel</i></a>
+    </div>
+  </li>
+  <!-- Ajoutez d'autres éléments de liste pour d'autres demandes -->
+</ul>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Contenu de la page de l'administrateur -->
+    <div class="container">
+      <h3>Gestion des droits - Administrateur</h3>
+      <p>
+        Vous pouvez ajouter/supprimer des modérateurs et des administrateurs ici
+        :
+      </p>
+
+      <!-- Boutons pour ajouter/supprimer des modérateurs -->
+      <div class="row">
+        <div class="col s12">
+          <a id="addModeratorButton" class="waves-effect waves-light btn"
+            ><i class="material-icons left">add</i> Ajouter un modérateur</a
+          >
+          <a id="removeModeratorButton" class="waves-effect waves-light btn red"
+            ><i class="material-icons left">remove</i> Supprimer un
+            modérateur</a
+          >
+        </div>
+      </div>
+
+      <!-- Boutons pour ajouter/supprimer des administrateurs -->
+      <div class="row">
+        <div class="col s12">
+          <a id="addAdministratorButton" class="waves-effect waves-light btn"
+            ><i class="material-icons left">add</i> Ajouter un administrateur</a
+          >
+          <a
+            id="removeAdministratorButton"
+            class="waves-effect waves-light btn red"
+            ><i class="material-icons left">remove</i> Supprimer un
+            administrateur</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
